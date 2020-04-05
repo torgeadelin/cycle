@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/cycle/static/css/main.6815585d.chunk.css",
+    "main.js": "/cycle/static/js/main.9c447a31.chunk.js",
+    "main.js.map": "/cycle/static/js/main.9c447a31.chunk.js.map",
+    "runtime-main.js": "/cycle/static/js/runtime-main.306fdb1b.js",
+    "runtime-main.js.map": "/cycle/static/js/runtime-main.306fdb1b.js.map",
+    "static/js/2.f442dd1d.chunk.js": "/cycle/static/js/2.f442dd1d.chunk.js",
+    "static/js/2.f442dd1d.chunk.js.map": "/cycle/static/js/2.f442dd1d.chunk.js.map",
+    "index.html": "/cycle/index.html",
+    "precache-manifest.04f9ba109d1934c29fc0526983495e73.js": "/cycle/precache-manifest.04f9ba109d1934c29fc0526983495e73.js",
+    "service-worker.js": "/cycle/service-worker.js",
+    "static/css/main.6815585d.chunk.css.map": "/cycle/static/css/main.6815585d.chunk.css.map",
+    "static/js/2.f442dd1d.chunk.js.LICENSE.txt": "/cycle/static/js/2.f442dd1d.chunk.js.LICENSE.txt",
+    "static/media/bike.bd5c342b.svg": "/cycle/static/media/bike.bd5c342b.svg",
+    "static/media/cycles.csv": "/cycle/static/media/cycles.49640d22.csv"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.306fdb1b.js",
+    "static/js/2.f442dd1d.chunk.js",
+    "static/css/main.6815585d.chunk.css",
+    "static/js/main.9c447a31.chunk.js"
+  ]
+}
