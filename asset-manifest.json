@@ -1,24 +1,25 @@
 {
   "files": {
-    "main.css": "/cycle/static/css/main.6815585d.chunk.css",
-    "main.js": "/cycle/static/js/main.9c447a31.chunk.js",
-    "main.js.map": "/cycle/static/js/main.9c447a31.chunk.js.map",
-    "runtime-main.js": "/cycle/static/js/runtime-main.306fdb1b.js",
-    "runtime-main.js.map": "/cycle/static/js/runtime-main.306fdb1b.js.map",
-    "static/js/2.f442dd1d.chunk.js": "/cycle/static/js/2.f442dd1d.chunk.js",
-    "static/js/2.f442dd1d.chunk.js.map": "/cycle/static/js/2.f442dd1d.chunk.js.map",
-    "index.html": "/cycle/index.html",
-    "precache-manifest.04f9ba109d1934c29fc0526983495e73.js": "/cycle/precache-manifest.04f9ba109d1934c29fc0526983495e73.js",
-    "service-worker.js": "/cycle/service-worker.js",
-    "static/css/main.6815585d.chunk.css.map": "/cycle/static/css/main.6815585d.chunk.css.map",
-    "static/js/2.f442dd1d.chunk.js.LICENSE.txt": "/cycle/static/js/2.f442dd1d.chunk.js.LICENSE.txt",
-    "static/media/bike.bd5c342b.svg": "/cycle/static/media/bike.bd5c342b.svg",
-    "static/media/cycles.csv": "/cycle/static/media/cycles.49640d22.csv"
+    "main.css": "/static/css/main.6815585d.chunk.css",
+    "main.js": "/static/js/main.cd0097db.chunk.js",
+    "main.js.map": "/static/js/main.cd0097db.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.22c04330.js",
+    "runtime-main.js.map": "/static/js/runtime-main.22c04330.js.map",
+    "static/js/2.92ec9858.chunk.js": "/static/js/2.92ec9858.chunk.js",
+    "static/js/2.92ec9858.chunk.js.map": "/static/js/2.92ec9858.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.a04e04636e63b7a495b2c74d06e78efe.js": "/precache-manifest.a04e04636e63b7a495b2c74d06e78efe.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/main.6815585d.chunk.css.map": "/static/css/main.6815585d.chunk.css.map",
+    "static/js/2.92ec9858.chunk.js.LICENSE.txt": "/static/js/2.92ec9858.chunk.js.LICENSE.txt",
+    "static/media/bike.bd5c342b.svg": "/static/media/bike.bd5c342b.svg",
+    "static/media/cycles.csv": "/static/media/cycles.49640d22.csv",
+    "static/media/loading.3ab25c66.svg": "/static/media/loading.3ab25c66.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.306fdb1b.js",
-    "static/js/2.f442dd1d.chunk.js",
+    "static/js/runtime-main.22c04330.js",
+    "static/js/2.92ec9858.chunk.js",
     "static/css/main.6815585d.chunk.css",
-    "static/js/main.9c447a31.chunk.js"
+    "static/js/main.cd0097db.chunk.js"
   ]
 }
