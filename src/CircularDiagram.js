@@ -9,7 +9,6 @@ import styled from 'styled-components'
 // UI Components
 import Button from './components/Button'
 import Flex from './components/Flex'
-import theme from './theme'
 
 // Configuration variables
 let HEATMAP = ["#d9ef8b", "#a6d96a", "#66bd63", "#1a9850", "#006837"]
@@ -42,7 +41,6 @@ export default class CircularDiagram extends Component {
         this.state = {
             currentYearIndex: 2,
         }
-
         this.grouped = []
 
     }
@@ -67,6 +65,11 @@ export default class CircularDiagram extends Component {
         return grouped
     }
 
+    /**
+     * Given a date object returns the week corresponding to
+     * that date
+     * Code from https://stackoverflow.com/questions/6117814/get-week-of-year-in-javascript-like-in-php
+     */
     getWeekNumber = (d) => {
         // Copy date so don't modify original
         d = new Date(Date.UTC(d.getFullYear(), d.getMonth(), d.getDate()));
@@ -89,6 +92,7 @@ export default class CircularDiagram extends Component {
 
     /**
      * Create Circular Diagram
+     * Implementation inspired from https://www.d3-graph-gallery.com/graph/circular_barplot_basic.html
      */
     createCircularDiagram = async () => {
         this.grouped = this.groupByWeek(this.state.currentYearIndex)
@@ -140,7 +144,6 @@ export default class CircularDiagram extends Component {
                 .padAngle(0.01)
             )
 
-
         // Add labels to the circular graph
         svg.append("g")
             .selectAll("g")
@@ -154,8 +157,6 @@ export default class CircularDiagram extends Component {
             .attr("transform", function (d, i) { return (x(i) + x.bandwidth() / 2 + Math.PI) % (2 * Math.PI) < Math.PI ? "rotate(180)" : "rotate(0)"; })
             .style("font-size", "11px")
             .attr("alignment-baseline", "middle")
-
-
     }
 
     /**

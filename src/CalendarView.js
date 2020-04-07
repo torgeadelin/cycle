@@ -44,6 +44,7 @@ export default class CalendarView extends React.Component {
     }
     /**
      * Create calendar view heat map
+     * Implementation inspired from https://observablehq.com/@d3/calendar-view
      */
     createCalendarView = () => {
         // Create scale for color heat map
