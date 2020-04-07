@@ -1,7 +1,7 @@
 import React from 'react'
 
 // Data Visualisation Library
-import * as d3 from "d3"
+import * as d3 from 'd3'
 
 // UI libraries & Theme
 import theme from './theme';
@@ -42,7 +42,6 @@ export default class CalendarView extends React.Component {
             currentYearIndex: 1,
         }
     }
-
     /**
      * Create calendar view heat map
      */
@@ -121,6 +120,7 @@ export default class CalendarView extends React.Component {
             .attr("y", - 5)
             .attr("fill", theme.colors.black)
             .text(d3.utcFormat("%b"))
+
     }
 
     /**
@@ -237,6 +237,7 @@ export default class CalendarView extends React.Component {
             <div>
                 <div className="barChartTop"></div>
                 <div className="calendarView"></div>
+                <div className="legeng"></div>
                 <p>Select a year</p>
                 <Years>{this.props.data.map((elem, i) => {
                     return (

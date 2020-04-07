@@ -28,7 +28,7 @@ export default function NavBar() {
                 <Text ml={2}>London</Text>
             </Flex>
 
-            <Link href="github">Github</Link>
+            <Link href="https://github.com/torgeadelin/cycle">Github</Link>
         </Wrapper>
     )
 }

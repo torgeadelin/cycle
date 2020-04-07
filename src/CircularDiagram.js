@@ -8,6 +8,8 @@ import styled from 'styled-components'
 
 // UI Components
 import Button from './components/Button'
+import Flex from './components/Flex'
+import theme from './theme'
 
 // Configuration variables
 let HEATMAP = ["#d9ef8b", "#a6d96a", "#66bd63", "#1a9850", "#006837"]
@@ -23,6 +25,11 @@ const Years = styled.div`
     div {
         margin-top: 10px;
     }
+`
+
+const Season = styled.div`
+    background-color: ${p => p.color};
+    padding: 5px 10px;
 `
 
 /**
@@ -93,9 +100,9 @@ export default class CircularDiagram extends Component {
 
         // Set the dimensions and margins of the graph
         var margin = { top: 100, right: 50, bottom: 100, left: 50 },
-            width = 850 - margin.left - margin.right,
-            height = 850 - margin.top - margin.bottom,
-            innerRadius = 200,
+            width = 800 - margin.left - margin.right,
+            height = 800 - margin.top - margin.bottom,
+            innerRadius = 140,
             outerRadius = Math.min(width, height) / 2;
 
         // Apend the SVG object
@@ -175,8 +182,19 @@ export default class CircularDiagram extends Component {
 
     render() {
         return (
-            <div>
-                <div style={{ display: "flex", justifyContent: "center" }} className="circularDiagram"></div>
+            <div style={{ position: "relative" }}>
+                <Flex justify="space-between">
+                    <Season color="#c2d9ff">Winter</Season>
+                    <Season color="#d0ffcf">Spring</Season>
+                </Flex>
+
+                <div style={{ display: "flex", justifyContent: "center" }} className="circularDiagram">
+                </div>
+                <Flex justify="space-between">
+                    <Season color="#fff0cf">Autumn</Season>
+                    <Season color="#ffcfcf">Summer</Season>
+                </Flex>
+                <br />
                 <p>Select a year</p>
                 <Years>{this.props.data.map((elem, i) => {
                     return (
